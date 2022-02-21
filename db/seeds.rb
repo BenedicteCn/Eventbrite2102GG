@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-20.times do
+5.times do
   user = User.create!(
     first_name: Faker::Name.first_name,
     last_name: Faker::Name.last_name,
@@ -16,7 +16,7 @@
   )
 end
 
-20.times do
+5.times do
   event = Event.create!(
     title: Faker::Book.title,
     description: Faker::Lorem.paragraph,
@@ -28,7 +28,7 @@ end
   );
 end
 
-20.times do
+5.times do
   attendance =  Attendance.create(
     user_id: User.all.sample.id,
     event_id: Event.all.sample.id)
