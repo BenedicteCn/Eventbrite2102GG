@@ -25,7 +25,8 @@ end
     end_date: Faker::Date.in_date_period,
     duration: rand(1..99),
     price: rand(1..99),
-    location: Faker::Address.city
+    location: Faker::Address.city,
+    admin_id: User.all.sample.id
   );
 end
 
