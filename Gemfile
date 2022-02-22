@@ -72,3 +72,5 @@ gem 'letter_opener'
 gem 'dotenv-rails'
 
 gem 'devise'
+
+gem 'binding_of_caller', '~> 0.7.2'

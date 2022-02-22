@@ -13,12 +13,13 @@
     last_name: Faker::Name.last_name,
     email: Faker::Internet.email,
     description: Faker::Lorem.sentence,
+    password: "ABCDEF"
   )
 end
 
 5.times do
   event = Event.create!(
-    title: Faker::Book.title,
+    title: Faker::Esport.event,
     description: Faker::Lorem.paragraph,
     start_date: Faker::Date.in_date_period,
     end_date: Faker::Date.in_date_period,
